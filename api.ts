@@ -178,6 +178,75 @@ export class BigInt {
 }
 
 export class InlineResponse200 {
+    'data'?: ResponsesGetAddressBalance;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetAddressBalance"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse200.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2001 {
+    'data'?: ResponsesGetAddressTimeframeBalance;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetAddressTimeframeBalance"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2001.attributeTypeMap;
+    }
+}
+
+export class InlineResponse20010 {
+    'data'?: ResponsesTxInfo;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesTxInfo"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse20010.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2002 {
     'data'?: Array<ResponsesGetAddressRunesBalanceListItem>;
     'responsesBaseResponse'?: ResponsesBaseResponse;
 
@@ -196,7 +265,168 @@ export class InlineResponse200 {
         }    ];
 
     static getAttributeTypeMap() {
-        return InlineResponse200.attributeTypeMap;
+        return InlineResponse2002.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2003 {
+    'data'?: ResponsesGetAddressRuneBalance;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetAddressRuneBalance"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2003.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2004 {
+    'data'?: Array<ResponsesGetAddressNonInscriptionUTXOData>;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "Array<ResponsesGetAddressNonInscriptionUTXOData>"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2004.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2005 {
+    'data'?: number;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "number"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2005.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2006 {
+    'data'?: RpcBlock;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "RpcBlock"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2006.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2007 {
+    'data'?: { [key: string]: number; };
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "{ [key: string]: number; }"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2007.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2008 {
+    'data'?: RpcBtcTx;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "RpcBtcTx"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2008.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2009 {
+    'data'?: ResponsesSendRawTransaction;
+    'responsesBaseResponse'?: ResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesSendRawTransaction"
+        },
+        {
+            "name": "responsesBaseResponse",
+            "baseName": "responses.BaseResponse",
+            "type": "ResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2009.attributeTypeMap;
     }
 }
 
@@ -562,6 +792,101 @@ export class ResponsesSendRawTransaction {
 
     static getAttributeTypeMap() {
         return ResponsesSendRawTransaction.attributeTypeMap;
+    }
+}
+
+export class ResponsesTxInfo {
+    'blkid'?: string;
+    'height'?: number;
+    'idx'?: number;
+    'inSatoshi'?: BigInt;
+    'locktime'?: number;
+    'nIn'?: number;
+    'nInInscription'?: number;
+    'nLostInscription'?: number;
+    'nNewInscription'?: number;
+    'nOut'?: number;
+    'nOutInscription'?: number;
+    'outSatoshi'?: BigInt;
+    'size'?: number;
+    'txid'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "blkid",
+            "baseName": "blkid",
+            "type": "string"
+        },
+        {
+            "name": "height",
+            "baseName": "height",
+            "type": "number"
+        },
+        {
+            "name": "idx",
+            "baseName": "idx",
+            "type": "number"
+        },
+        {
+            "name": "inSatoshi",
+            "baseName": "inSatoshi",
+            "type": "BigInt"
+        },
+        {
+            "name": "locktime",
+            "baseName": "locktime",
+            "type": "number"
+        },
+        {
+            "name": "nIn",
+            "baseName": "nIn",
+            "type": "number"
+        },
+        {
+            "name": "nInInscription",
+            "baseName": "nInInscription",
+            "type": "number"
+        },
+        {
+            "name": "nLostInscription",
+            "baseName": "nLostInscription",
+            "type": "number"
+        },
+        {
+            "name": "nNewInscription",
+            "baseName": "nNewInscription",
+            "type": "number"
+        },
+        {
+            "name": "nOut",
+            "baseName": "nOut",
+            "type": "number"
+        },
+        {
+            "name": "nOutInscription",
+            "baseName": "nOutInscription",
+            "type": "number"
+        },
+        {
+            "name": "outSatoshi",
+            "baseName": "outSatoshi",
+            "type": "BigInt"
+        },
+        {
+            "name": "size",
+            "baseName": "size",
+            "type": "number"
+        },
+        {
+            "name": "txid",
+            "baseName": "txid",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return ResponsesTxInfo.attributeTypeMap;
     }
 }
 
@@ -1159,6 +1484,16 @@ let typeMap: {[index: string]: any} = {
     "ApiErrorResponse": ApiErrorResponse,
     "BigInt": BigInt,
     "InlineResponse200": InlineResponse200,
+    "InlineResponse2001": InlineResponse2001,
+    "InlineResponse20010": InlineResponse20010,
+    "InlineResponse2002": InlineResponse2002,
+    "InlineResponse2003": InlineResponse2003,
+    "InlineResponse2004": InlineResponse2004,
+    "InlineResponse2005": InlineResponse2005,
+    "InlineResponse2006": InlineResponse2006,
+    "InlineResponse2007": InlineResponse2007,
+    "InlineResponse2008": InlineResponse2008,
+    "InlineResponse2009": InlineResponse2009,
     "ResponsesBaseResponse": ResponsesBaseResponse,
     "ResponsesBlockRange": ResponsesBlockRange,
     "ResponsesGetAddressBalance": ResponsesGetAddressBalance,
@@ -1170,6 +1505,7 @@ let typeMap: {[index: string]: any} = {
     "ResponsesGetAddressTimeframeBalanceItemBlockRange": ResponsesGetAddressTimeframeBalanceItemBlockRange,
     "ResponsesNonInscriptionUTXO": ResponsesNonInscriptionUTXO,
     "ResponsesSendRawTransaction": ResponsesSendRawTransaction,
+    "ResponsesTxInfo": ResponsesTxInfo,
     "RpcBlock": RpcBlock,
     "RpcBtcTx": RpcBtcTx,
     "RpcPrevOut": RpcPrevOut,
@@ -1236,6 +1572,7 @@ export class VoidAuth implements Authentication {
 }
 
 export enum AddressesApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class AddressesApi {
@@ -1245,6 +1582,7 @@ export class AddressesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -1285,7 +1623,7 @@ export class AddressesApi {
      * @param address Bitcoin address
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressBalanceGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: ResponsesGetAddressBalance;  }> {
+    public addressesAddressBalanceGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse200;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/balance'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -1310,6 +1648,8 @@ export class AddressesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1319,12 +1659,12 @@ export class AddressesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: ResponsesGetAddressBalance;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse200;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ResponsesGetAddressBalance");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse200");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1342,7 +1682,7 @@ export class AddressesApi {
      * @param end End block height
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressBalanceTimeframeGet (address: string, start: number, end: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: ResponsesGetAddressTimeframeBalance;  }> {
+    public addressesAddressBalanceTimeframeGet (address: string, start: number, end: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2001;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/balance/timeframe'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -1385,6 +1725,8 @@ export class AddressesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1394,12 +1736,12 @@ export class AddressesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: ResponsesGetAddressTimeframeBalance;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2001;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ResponsesGetAddressTimeframeBalance");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2001");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1415,7 +1757,7 @@ export class AddressesApi {
      * @param address Bitcoin address
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressRunesGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse200;  }> {
+    public addressesAddressRunesGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2002;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/runes'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -1440,6 +1782,8 @@ export class AddressesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1449,12 +1793,12 @@ export class AddressesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: InlineResponse200;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2002;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "InlineResponse200");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2002");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1471,7 +1815,7 @@ export class AddressesApi {
      * @param runeid Rune ID
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressRunesRuneidGet (address: string, runeid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: ResponsesGetAddressRuneBalance;  }> {
+    public addressesAddressRunesRuneidGet (address: string, runeid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2003;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/runes/{runeid}'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)))
             .replace('{' + 'runeid' + '}', encodeURIComponent(String(runeid)));
@@ -1502,6 +1846,8 @@ export class AddressesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1511,12 +1857,12 @@ export class AddressesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: ResponsesGetAddressRuneBalance;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2003;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ResponsesGetAddressRuneBalance");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2003");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1532,7 +1878,7 @@ export class AddressesApi {
      * @param address Bitcoin address
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressUtxosGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<ResponsesGetAddressNonInscriptionUTXOData>;  }> {
+    public addressesAddressUtxosGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2004;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/utxos'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -1557,6 +1903,8 @@ export class AddressesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1566,12 +1914,12 @@ export class AddressesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<ResponsesGetAddressNonInscriptionUTXOData>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2004;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<ResponsesGetAddressNonInscriptionUTXOData>");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2004");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1583,6 +1931,7 @@ export class AddressesApi {
     }
 }
 export enum BlocksApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class BlocksApi {
@@ -1592,6 +1941,7 @@ export class BlocksApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -1631,7 +1981,7 @@ export class BlocksApi {
      * @summary Get current block height
      * @param {*} [options] Override http request options.
      */
-    public blocksCurrentHeightGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: number;  }> {
+    public blocksCurrentHeightGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2005;  }> {
         const localVarPath = this.basePath + '/blocks/current-height';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
@@ -1650,6 +2000,8 @@ export class BlocksApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -1659,12 +2011,12 @@ export class BlocksApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: number;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2005;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "number");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2005");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1680,7 +2032,7 @@ export class BlocksApi {
      * @param hash Block hash
      * @param {*} [options] Override http request options.
      */
-    public blocksHashHashGet (hash: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: RpcBlock;  }> {
+    public blocksHashHashGet (hash: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2006;  }> {
         const localVarPath = this.basePath + '/blocks/hash/{hash}'
             .replace('{' + 'hash' + '}', encodeURIComponent(String(hash)));
         let localVarQueryParameters: any = {};
@@ -1714,12 +2066,12 @@ export class BlocksApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: RpcBlock;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2006;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RpcBlock");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2006");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1735,7 +2087,7 @@ export class BlocksApi {
      * @param height Block height
      * @param {*} [options] Override http request options.
      */
-    public blocksHeightGet (height: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: RpcBlock;  }> {
+    public blocksHeightGet (height: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2006;  }> {
         const localVarPath = this.basePath + '/blocks/{height}'
             .replace('{' + 'height' + '}', encodeURIComponent(String(height)));
         let localVarQueryParameters: any = {};
@@ -1769,12 +2121,12 @@ export class BlocksApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: RpcBlock;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2006;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RpcBlock");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2006");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1790,7 +2142,7 @@ export class BlocksApi {
      * @param height Block height
      * @param {*} [options] Override http request options.
      */
-    public blocksHeightTransactionsGet (height: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<StoreTransactionDocument>;  }> {
+    public blocksHeightTransactionsGet (height: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<any>;  }> {
         const localVarPath = this.basePath + '/blocks/{height}/transactions'
             .replace('{' + 'height' + '}', encodeURIComponent(String(height)));
         let localVarQueryParameters: any = {};
@@ -1824,12 +2176,12 @@ export class BlocksApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<StoreTransactionDocument>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: Array<any>;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<StoreTransactionDocument>");
+                    body = ObjectSerializer.deserialize(body, "Array<any>");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1841,6 +2193,7 @@ export class BlocksApi {
     }
 }
 export enum FeesApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class FeesApi {
@@ -1850,6 +2203,7 @@ export class FeesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -1889,7 +2243,7 @@ export class FeesApi {
      * @summary Get recommended fees
      * @param {*} [options] Override http request options.
      */
-    public feesGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: { [key: string]: number; };  }> {
+    public feesGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2007;  }> {
         const localVarPath = this.basePath + '/fees';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
@@ -1917,12 +2271,12 @@ export class FeesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: { [key: string]: number; };  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2007;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "{ [key: string]: number; }");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2007");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -1934,6 +2288,7 @@ export class FeesApi {
     }
 }
 export enum MempoolApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class MempoolApi {
@@ -1943,6 +2298,7 @@ export class MempoolApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -1983,7 +2339,7 @@ export class MempoolApi {
      * @param address Bitcoin address
      * @param {*} [options] Override http request options.
      */
-    public mempoolAddressesAddressTransactionsGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<RpcBtcTx>;  }> {
+    public mempoolAddressesAddressTransactionsGet (address: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<any>;  }> {
         const localVarPath = this.basePath + '/mempool/addresses/{address}/transactions'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -2008,6 +2364,8 @@ export class MempoolApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2017,12 +2375,12 @@ export class MempoolApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<RpcBtcTx>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: Array<any>;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<RpcBtcTx>");
+                    body = ObjectSerializer.deserialize(body, "Array<any>");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2037,7 +2395,7 @@ export class MempoolApi {
      * @summary Get mempool transactions
      * @param {*} [options] Override http request options.
      */
-    public mempoolTransactionsGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<RpcBtcTx>;  }> {
+    public mempoolTransactionsGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<any>;  }> {
         const localVarPath = this.basePath + '/mempool/transactions';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
@@ -2056,6 +2414,8 @@ export class MempoolApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2065,12 +2425,12 @@ export class MempoolApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<RpcBtcTx>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: Array<any>;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<RpcBtcTx>");
+                    body = ObjectSerializer.deserialize(body, "Array<any>");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2086,7 +2446,7 @@ export class MempoolApi {
      * @param txid Transaction ID
      * @param {*} [options] Override http request options.
      */
-    public mempoolTransactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }> {
+    public mempoolTransactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }> {
         const localVarPath = this.basePath + '/mempool/transactions/{txid}'
             .replace('{' + 'txid' + '}', encodeURIComponent(String(txid)));
         let localVarQueryParameters: any = {};
@@ -2111,6 +2471,8 @@ export class MempoolApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2120,12 +2482,12 @@ export class MempoolApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RpcBtcTx");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2008");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2137,6 +2499,7 @@ export class MempoolApi {
     }
 }
 export enum RunesApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class RunesApi {
@@ -2146,6 +2509,7 @@ export class RunesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -2204,6 +2568,8 @@ export class RunesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2258,6 +2624,8 @@ export class RunesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
+
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
 
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
@@ -2314,6 +2682,8 @@ export class RunesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2362,6 +2732,8 @@ export class RunesApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2388,6 +2760,7 @@ export class RunesApi {
     }
 }
 export enum TransactionsApiApiKeys {
+    ApiKeyAuth,
 }
 
 export class TransactionsApi {
@@ -2397,6 +2770,7 @@ export class TransactionsApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
     }
 
     constructor(basePath?: string);
@@ -2437,7 +2811,7 @@ export class TransactionsApi {
      * @param hash Transaction hash
      * @param {*} [options] Override http request options.
      */
-    public indexerTxHashGet (hash: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }> {
+    public indexerTxHashGet (hash: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }> {
         const localVarPath = this.basePath + '/indexer/tx/{hash}'
             .replace('{' + 'hash' + '}', encodeURIComponent(String(hash)));
         let localVarQueryParameters: any = {};
@@ -2471,12 +2845,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RpcBtcTx");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2008");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2492,7 +2866,7 @@ export class TransactionsApi {
      * @param transaction Raw transaction hex
      * @param {*} [options] Override http request options.
      */
-    public transactionsBroadcastPost (transaction: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: ResponsesSendRawTransaction;  }> {
+    public transactionsBroadcastPost (transaction: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }> {
         const localVarPath = this.basePath + '/transactions/broadcast';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
@@ -2517,6 +2891,8 @@ export class TransactionsApi {
             body: ObjectSerializer.serialize(transaction, "string")
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2526,12 +2902,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: ResponsesSendRawTransaction;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ResponsesSendRawTransaction");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2009");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2547,7 +2923,7 @@ export class TransactionsApi {
      * @param txid Transaction ID
      * @param {*} [options] Override http request options.
      */
-    public transactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }> {
+    public transactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }> {
         const localVarPath = this.basePath + '/transactions/{txid}'
             .replace('{' + 'txid' + '}', encodeURIComponent(String(txid)));
         let localVarQueryParameters: any = {};
@@ -2572,6 +2948,8 @@ export class TransactionsApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2581,12 +2959,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: RpcBtcTx;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RpcBtcTx");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse20010");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2602,7 +2980,7 @@ export class TransactionsApi {
      * @param txid Transaction ID
      * @param {*} [options] Override http request options.
      */
-    public transactionsTxidInputsGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<RpcVin>;  }> {
+    public transactionsTxidInputsGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<any>;  }> {
         const localVarPath = this.basePath + '/transactions/{txid}/inputs'
             .replace('{' + 'txid' + '}', encodeURIComponent(String(txid)));
         let localVarQueryParameters: any = {};
@@ -2627,6 +3005,8 @@ export class TransactionsApi {
             json: true,
         };
 
+        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
+
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2636,12 +3016,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<RpcVin>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: Array<any>;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<RpcVin>");
+                    body = ObjectSerializer.deserialize(body, "Array<any>");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
