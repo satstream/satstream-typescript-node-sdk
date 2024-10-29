@@ -362,7 +362,7 @@ export class InlineResponse2006 {
 }
 
 export class InlineResponse2007 {
-    'data'?: { [key: string]: number; };
+    'data'?: ResponsesGetFeesResponse;
     'responsesBaseResponse'?: ResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
@@ -371,7 +371,7 @@ export class InlineResponse2007 {
         {
             "name": "data",
             "baseName": "data",
-            "type": "{ [key: string]: number; }"
+            "type": "ResponsesGetFeesResponse"
         },
         {
             "name": "responsesBaseResponse",
@@ -715,6 +715,29 @@ export class ResponsesGetCurrentBlockHeightResponse {
 
     static getAttributeTypeMap() {
         return ResponsesGetCurrentBlockHeightResponse.attributeTypeMap;
+    }
+}
+
+export class ResponsesGetFeesResponse {
+    'confirmationBlocks'?: number;
+    'feeRateInBtc'?: number;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "confirmationBlocks",
+            "baseName": "confirmation_blocks",
+            "type": "number"
+        },
+        {
+            "name": "feeRateInBtc",
+            "baseName": "fee_rate_in_btc",
+            "type": "number"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return ResponsesGetFeesResponse.attributeTypeMap;
     }
 }
 
@@ -1521,6 +1544,7 @@ let typeMap: {[index: string]: any} = {
     "ResponsesGetAddressTimeframeBalanceItem": ResponsesGetAddressTimeframeBalanceItem,
     "ResponsesGetAddressTimeframeBalanceItemBlockRange": ResponsesGetAddressTimeframeBalanceItemBlockRange,
     "ResponsesGetCurrentBlockHeightResponse": ResponsesGetCurrentBlockHeightResponse,
+    "ResponsesGetFeesResponse": ResponsesGetFeesResponse,
     "ResponsesNonInscriptionUTXO": ResponsesNonInscriptionUTXO,
     "ResponsesSendRawTransaction": ResponsesSendRawTransaction,
     "ResponsesTxInfo": ResponsesTxInfo,
