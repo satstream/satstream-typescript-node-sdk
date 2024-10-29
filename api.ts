@@ -136,7 +136,19 @@ class ObjectSerializer {
     }
 }
 
-export class ApiErrorResponse {
+export class BigInt {
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+    ];
+
+    static getAttributeTypeMap() {
+        return BigInt.attributeTypeMap;
+    }
+}
+
+export class BlocksErrorResponse {
     'code'?: number;
     'data'?: any;
     'msg'?: string;
@@ -161,19 +173,7 @@ export class ApiErrorResponse {
         }    ];
 
     static getAttributeTypeMap() {
-        return ApiErrorResponse.attributeTypeMap;
-    }
-}
-
-export class BigInt {
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-    ];
-
-    static getAttributeTypeMap() {
-        return BigInt.attributeTypeMap;
+        return BlocksErrorResponse.attributeTypeMap;
     }
 }
 
@@ -1481,8 +1481,8 @@ let enumsMap: {[index: string]: any} = {
 }
 
 let typeMap: {[index: string]: any} = {
-    "ApiErrorResponse": ApiErrorResponse,
     "BigInt": BigInt,
+    "BlocksErrorResponse": BlocksErrorResponse,
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
