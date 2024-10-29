@@ -1582,7 +1582,7 @@ export class AddressesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
@@ -1941,7 +1941,7 @@ export class BlocksApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
@@ -2203,7 +2203,7 @@ export class FeesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
@@ -2298,7 +2298,7 @@ export class MempoolApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
@@ -2509,7 +2509,7 @@ export class RunesApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
@@ -2770,7 +2770,7 @@ export class TransactionsApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-Key'),
+        'ApiKeyAuth': new ApiKeyAuth('header', 'X-API-KEY'),
     }
 
     constructor(basePath?: string);
