@@ -316,7 +316,7 @@ export class InlineResponse2004 {
 }
 
 export class InlineResponse2005 {
-    'data'?: number;
+    'data'?: ResponsesGetCurrentBlockHeightResponse;
     'responsesBaseResponse'?: ResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
@@ -325,7 +325,7 @@ export class InlineResponse2005 {
         {
             "name": "data",
             "baseName": "data",
-            "type": "number"
+            "type": "ResponsesGetCurrentBlockHeightResponse"
         },
         {
             "name": "responsesBaseResponse",
@@ -698,6 +698,23 @@ export class ResponsesGetAddressTimeframeBalanceItemBlockRange {
 
     static getAttributeTypeMap() {
         return ResponsesGetAddressTimeframeBalanceItemBlockRange.attributeTypeMap;
+    }
+}
+
+export class ResponsesGetCurrentBlockHeightResponse {
+    'height'?: number;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "height",
+            "baseName": "height",
+            "type": "number"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return ResponsesGetCurrentBlockHeightResponse.attributeTypeMap;
     }
 }
 
@@ -1503,6 +1520,7 @@ let typeMap: {[index: string]: any} = {
     "ResponsesGetAddressTimeframeBalance": ResponsesGetAddressTimeframeBalance,
     "ResponsesGetAddressTimeframeBalanceItem": ResponsesGetAddressTimeframeBalanceItem,
     "ResponsesGetAddressTimeframeBalanceItemBlockRange": ResponsesGetAddressTimeframeBalanceItemBlockRange,
+    "ResponsesGetCurrentBlockHeightResponse": ResponsesGetCurrentBlockHeightResponse,
     "ResponsesNonInscriptionUTXO": ResponsesNonInscriptionUTXO,
     "ResponsesSendRawTransaction": ResponsesSendRawTransaction,
     "ResponsesTxInfo": ResponsesTxInfo,
