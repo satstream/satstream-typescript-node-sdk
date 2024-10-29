@@ -2000,8 +2000,6 @@ export class BlocksApi {
             json: true,
         };
 
-        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
-
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
         if (Object.keys(localVarFormParams).length) {
@@ -2413,8 +2411,6 @@ export class MempoolApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-
-        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
 
         this.authentications.default.applyToRequest(localVarRequestOptions);
 
