@@ -148,7 +148,7 @@ export class BigInt {
     }
 }
 
-export class BlocksErrorResponse {
+export class GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse {
     'code'?: number;
     'data'?: any;
     'msg'?: string;
@@ -173,13 +173,129 @@ export class BlocksErrorResponse {
         }    ];
 
     static getAttributeTypeMap() {
-        return BlocksErrorResponse.attributeTypeMap;
+        return GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse.attributeTypeMap;
+    }
+}
+
+export class GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse {
+    'code'?: number;
+    'data'?: any;
+    'msg'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "code",
+            "baseName": "code",
+            "type": "number"
+        },
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "any"
+        },
+        {
+            "name": "msg",
+            "baseName": "msg",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse.attributeTypeMap;
+    }
+}
+
+export class GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse {
+    'code'?: number;
+    'data'?: any;
+    'msg'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "code",
+            "baseName": "code",
+            "type": "number"
+        },
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "any"
+        },
+        {
+            "name": "msg",
+            "baseName": "msg",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse.attributeTypeMap;
+    }
+}
+
+export class GithubComSatstreamSsApiServerApiRunesResponsesErrorResponse {
+    'code'?: number;
+    'data'?: any;
+    'msg'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "code",
+            "baseName": "code",
+            "type": "number"
+        },
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "any"
+        },
+        {
+            "name": "msg",
+            "baseName": "msg",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return GithubComSatstreamSsApiServerApiRunesResponsesErrorResponse.attributeTypeMap;
+    }
+}
+
+export class GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse {
+    'code'?: number;
+    'data'?: any;
+    'msg'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "code",
+            "baseName": "code",
+            "type": "number"
+        },
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "any"
+        },
+        {
+            "name": "msg",
+            "baseName": "msg",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse.attributeTypeMap;
     }
 }
 
 export class InlineResponse200 {
     'data'?: ResponsesGetAddressBalance;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
+    'githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
 
@@ -190,9 +306,9 @@ export class InlineResponse200 {
             "type": "ResponsesGetAddressBalance"
         },
         {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
+            "name": "githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_addresses_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse"
         }    ];
 
     static getAttributeTypeMap() {
@@ -202,7 +318,7 @@ export class InlineResponse200 {
 
 export class InlineResponse2001 {
     'data'?: ResponsesGetAddressTimeframeBalance;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
+    'githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
 
@@ -213,9 +329,9 @@ export class InlineResponse2001 {
             "type": "ResponsesGetAddressTimeframeBalance"
         },
         {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
+            "name": "githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_addresses_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse"
         }    ];
 
     static getAttributeTypeMap() {
@@ -224,8 +340,8 @@ export class InlineResponse2001 {
 }
 
 export class InlineResponse20010 {
-    'data'?: ResponsesTxInfo;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
+    'data'?: Array<ResponsesRuneInfo>;
+    'githubComSatstreamSsApiServerApiRunesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
 
@@ -233,12 +349,12 @@ export class InlineResponse20010 {
         {
             "name": "data",
             "baseName": "data",
-            "type": "ResponsesTxInfo"
+            "type": "Array<ResponsesRuneInfo>"
         },
         {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
+            "name": "githubComSatstreamSsApiServerApiRunesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_runes_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse"
         }    ];
 
     static getAttributeTypeMap() {
@@ -246,170 +362,9 @@ export class InlineResponse20010 {
     }
 }
 
-export class InlineResponse2002 {
-    'data'?: Array<ResponsesGetAddressRunesBalanceListItem>;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<ResponsesGetAddressRunesBalanceListItem>"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2002.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2003 {
-    'data'?: ResponsesGetAddressRuneBalance;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "ResponsesGetAddressRuneBalance"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2003.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2004 {
-    'data'?: Array<ResponsesGetAddressNonInscriptionUTXOData>;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "Array<ResponsesGetAddressNonInscriptionUTXOData>"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2004.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2005 {
-    'data'?: ResponsesGetCurrentBlockHeightResponse;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "ResponsesGetCurrentBlockHeightResponse"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2005.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2006 {
-    'data'?: RpcBlock;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "RpcBlock"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2006.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2007 {
-    'data'?: ResponsesGetFeesResponse;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "ResponsesGetFeesResponse"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2007.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2008 {
-    'data'?: RpcBtcTx;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "RpcBtcTx"
-        },
-        {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return InlineResponse2008.attributeTypeMap;
-    }
-}
-
-export class InlineResponse2009 {
+export class InlineResponse20011 {
     'data'?: ResponsesSendRawTransaction;
-    'responsesBaseResponse'?: ResponsesBaseResponse;
+    'githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse;
 
     static discriminator: string | undefined = undefined;
 
@@ -420,9 +375,216 @@ export class InlineResponse2009 {
             "type": "ResponsesSendRawTransaction"
         },
         {
-            "name": "responsesBaseResponse",
-            "baseName": "responses.BaseResponse",
-            "type": "ResponsesBaseResponse"
+            "name": "githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_transactions_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse20011.attributeTypeMap;
+    }
+}
+
+export class InlineResponse20012 {
+    'data'?: ResponsesTxInfo;
+    'githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesTxInfo"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_transactions_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse20012.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2002 {
+    'data'?: Array<ResponsesGetAddressRunesBalanceListItem>;
+    'githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "Array<ResponsesGetAddressRunesBalanceListItem>"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_addresses_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2002.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2003 {
+    'data'?: ResponsesGetAddressRuneBalance;
+    'githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetAddressRuneBalance"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_addresses_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2003.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2004 {
+    'data'?: Array<ResponsesGetAddressNonInscriptionUTXOData>;
+    'githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "Array<ResponsesGetAddressNonInscriptionUTXOData>"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiAddressesResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_addresses_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2004.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2005 {
+    'data'?: ResponsesGetCurrentBlockHeightResponse;
+    'githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetCurrentBlockHeightResponse"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_blocks_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2005.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2006 {
+    'data'?: RpcBlock;
+    'githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "RpcBlock"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_blocks_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2006.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2007 {
+    'data'?: ResponsesGetFeesResponse;
+    'githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "ResponsesGetFeesResponse"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_blocks_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2007.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2008 {
+    'data'?: RpcBtcTx;
+    'githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "RpcBtcTx"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_transactions_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return InlineResponse2008.attributeTypeMap;
+    }
+}
+
+export class InlineResponse2009 {
+    'data'?: RpcBtcTx;
+    'githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse'?: GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "data",
+            "baseName": "data",
+            "type": "RpcBtcTx"
+        },
+        {
+            "name": "githubComSatstreamSsApiServerApiBlocksResponsesBaseResponse",
+            "baseName": "github_com_satstream_ss-api_server_api_blocks_responses.BaseResponse",
+            "type": "GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse"
         }    ];
 
     static getAttributeTypeMap() {
@@ -430,32 +592,61 @@ export class InlineResponse2009 {
     }
 }
 
-export class ResponsesBaseResponse {
-    'code'?: number;
-    'data'?: any;
-    'msg'?: string;
+export class OrdinalsTerms {
+    'amount'?: BigInt;
+    'cap'?: BigInt;
+    'height'?: OrdinalsTermsRange;
+    'offset'?: OrdinalsTermsRange;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "code",
-            "baseName": "code",
-            "type": "number"
+            "name": "amount",
+            "baseName": "amount",
+            "type": "BigInt"
         },
         {
-            "name": "data",
-            "baseName": "data",
-            "type": "any"
+            "name": "cap",
+            "baseName": "cap",
+            "type": "BigInt"
         },
         {
-            "name": "msg",
-            "baseName": "msg",
-            "type": "string"
+            "name": "height",
+            "baseName": "height",
+            "type": "OrdinalsTermsRange"
+        },
+        {
+            "name": "offset",
+            "baseName": "offset",
+            "type": "OrdinalsTermsRange"
         }    ];
 
     static getAttributeTypeMap() {
-        return ResponsesBaseResponse.attributeTypeMap;
+        return OrdinalsTerms.attributeTypeMap;
+    }
+}
+
+export class OrdinalsTermsRange {
+    'end'?: BigInt;
+    'start'?: BigInt;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "end",
+            "baseName": "end",
+            "type": "BigInt"
+        },
+        {
+            "name": "start",
+            "baseName": "start",
+            "type": "BigInt"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return OrdinalsTermsRange.attributeTypeMap;
     }
 }
 
@@ -484,7 +675,7 @@ export class ResponsesBlockRange {
 
 export class ResponsesGetAddressBalance {
     'address'?: string;
-    'balance'?: number;
+    'balance'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -497,7 +688,7 @@ export class ResponsesGetAddressBalance {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number"
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
@@ -664,7 +855,7 @@ export class ResponsesGetAddressTimeframeBalance {
 }
 
 export class ResponsesGetAddressTimeframeBalanceItem {
-    'balance'?: number;
+    'balance'?: string;
     'blockRange'?: ResponsesGetAddressTimeframeBalanceItemBlockRange;
 
     static discriminator: string | undefined = undefined;
@@ -673,7 +864,7 @@ export class ResponsesGetAddressTimeframeBalanceItem {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number"
+            "type": "string"
         },
         {
             "name": "blockRange",
@@ -815,6 +1006,95 @@ export class ResponsesNonInscriptionUTXO {
 
     static getAttributeTypeMap() {
         return ResponsesNonInscriptionUTXO.attributeTypeMap;
+    }
+}
+
+export class ResponsesRuneInfo {
+    'blockHeight'?: number;
+    'divisibility'?: number;
+    'minted'?: string;
+    'premine'?: BigInt;
+    'rune'?: string;
+    'runeId'?: string;
+    'spacedRune'?: string;
+    'spacers'?: number;
+    'symbol'?: string;
+    'terms'?: OrdinalsTerms;
+    'turbo'?: boolean;
+    'txHeight'?: number;
+    'txid'?: string;
+
+    static discriminator: string | undefined = undefined;
+
+    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "blockHeight",
+            "baseName": "block_height",
+            "type": "number"
+        },
+        {
+            "name": "divisibility",
+            "baseName": "divisibility",
+            "type": "number"
+        },
+        {
+            "name": "minted",
+            "baseName": "minted",
+            "type": "string"
+        },
+        {
+            "name": "premine",
+            "baseName": "premine",
+            "type": "BigInt"
+        },
+        {
+            "name": "rune",
+            "baseName": "rune",
+            "type": "string"
+        },
+        {
+            "name": "runeId",
+            "baseName": "rune_id",
+            "type": "string"
+        },
+        {
+            "name": "spacedRune",
+            "baseName": "spaced_rune",
+            "type": "string"
+        },
+        {
+            "name": "spacers",
+            "baseName": "spacers",
+            "type": "number"
+        },
+        {
+            "name": "symbol",
+            "baseName": "symbol",
+            "type": "string"
+        },
+        {
+            "name": "terms",
+            "baseName": "terms",
+            "type": "OrdinalsTerms"
+        },
+        {
+            "name": "turbo",
+            "baseName": "turbo",
+            "type": "boolean"
+        },
+        {
+            "name": "txHeight",
+            "baseName": "tx_height",
+            "type": "number"
+        },
+        {
+            "name": "txid",
+            "baseName": "txid",
+            "type": "string"
+        }    ];
+
+    static getAttributeTypeMap() {
+        return ResponsesRuneInfo.attributeTypeMap;
     }
 }
 
@@ -1372,64 +1652,6 @@ export class RpcVout {
     }
 }
 
-export class SsApiServerApiRunesResponsesErrorResponse {
-    'code'?: number;
-    'data'?: any;
-    'msg'?: string;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "code",
-            "baseName": "code",
-            "type": "number"
-        },
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "any"
-        },
-        {
-            "name": "msg",
-            "baseName": "msg",
-            "type": "string"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return SsApiServerApiRunesResponsesErrorResponse.attributeTypeMap;
-    }
-}
-
-export class SsApiServerApiTransactionsResponsesErrorResponse {
-    'code'?: number;
-    'data'?: any;
-    'msg'?: string;
-
-    static discriminator: string | undefined = undefined;
-
-    static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
-        {
-            "name": "code",
-            "baseName": "code",
-            "type": "number"
-        },
-        {
-            "name": "data",
-            "baseName": "data",
-            "type": "any"
-        },
-        {
-            "name": "msg",
-            "baseName": "msg",
-            "type": "string"
-        }    ];
-
-    static getAttributeTypeMap() {
-        return SsApiServerApiTransactionsResponsesErrorResponse.attributeTypeMap;
-    }
-}
-
 /**
 * Detailed information about a transaction
 */
@@ -1522,10 +1744,16 @@ let enumsMap: {[index: string]: any} = {
 
 let typeMap: {[index: string]: any} = {
     "BigInt": BigInt,
-    "BlocksErrorResponse": BlocksErrorResponse,
+    "GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse": GithubComSatstreamSsApiServerApiAddressesResponsesBaseResponse,
+    "GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse": GithubComSatstreamSsApiServerApiBlocksResponsesBaseResponse,
+    "GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse": GithubComSatstreamSsApiServerApiRunesResponsesBaseResponse,
+    "GithubComSatstreamSsApiServerApiRunesResponsesErrorResponse": GithubComSatstreamSsApiServerApiRunesResponsesErrorResponse,
+    "GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse": GithubComSatstreamSsApiServerApiTransactionsResponsesBaseResponse,
     "InlineResponse200": InlineResponse200,
     "InlineResponse2001": InlineResponse2001,
     "InlineResponse20010": InlineResponse20010,
+    "InlineResponse20011": InlineResponse20011,
+    "InlineResponse20012": InlineResponse20012,
     "InlineResponse2002": InlineResponse2002,
     "InlineResponse2003": InlineResponse2003,
     "InlineResponse2004": InlineResponse2004,
@@ -1534,7 +1762,8 @@ let typeMap: {[index: string]: any} = {
     "InlineResponse2007": InlineResponse2007,
     "InlineResponse2008": InlineResponse2008,
     "InlineResponse2009": InlineResponse2009,
-    "ResponsesBaseResponse": ResponsesBaseResponse,
+    "OrdinalsTerms": OrdinalsTerms,
+    "OrdinalsTermsRange": OrdinalsTermsRange,
     "ResponsesBlockRange": ResponsesBlockRange,
     "ResponsesGetAddressBalance": ResponsesGetAddressBalance,
     "ResponsesGetAddressNonInscriptionUTXOData": ResponsesGetAddressNonInscriptionUTXOData,
@@ -1546,6 +1775,7 @@ let typeMap: {[index: string]: any} = {
     "ResponsesGetCurrentBlockHeightResponse": ResponsesGetCurrentBlockHeightResponse,
     "ResponsesGetFeesResponse": ResponsesGetFeesResponse,
     "ResponsesNonInscriptionUTXO": ResponsesNonInscriptionUTXO,
+    "ResponsesRuneInfo": ResponsesRuneInfo,
     "ResponsesSendRawTransaction": ResponsesSendRawTransaction,
     "ResponsesTxInfo": ResponsesTxInfo,
     "RpcBlock": RpcBlock,
@@ -1556,8 +1786,6 @@ let typeMap: {[index: string]: any} = {
     "RpcUtxoRune": RpcUtxoRune,
     "RpcVin": RpcVin,
     "RpcVout": RpcVout,
-    "SsApiServerApiRunesResponsesErrorResponse": SsApiServerApiRunesResponsesErrorResponse,
-    "SsApiServerApiTransactionsResponsesErrorResponse": SsApiServerApiTransactionsResponsesErrorResponse,
     "StoreTransactionDocument": StoreTransactionDocument,
 }
 
@@ -1720,11 +1948,11 @@ export class AddressesApi {
      * Get the balance of a Bitcoin address for a specific timeframe
      * @summary Get address timeframe balance
      * @param address Bitcoin address
-     * @param start Start block height
-     * @param end End block height
+     * @param timeframe Timeframe
+     * @param token Token
      * @param {*} [options] Override http request options.
      */
-    public addressesAddressBalanceTimeframeGet (address: string, start: number, end: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2001;  }> {
+    public addressesAddressBalanceTimeframeGet (address: string, timeframe: '4h' | '1d' | '1w' | '1m', token?: 'BTC' | 'RUNE', options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2001;  }> {
         const localVarPath = this.basePath + '/addresses/{address}/balance/timeframe'
             .replace('{' + 'address' + '}', encodeURIComponent(String(address)));
         let localVarQueryParameters: any = {};
@@ -1736,22 +1964,17 @@ export class AddressesApi {
             throw new Error('Required parameter address was null or undefined when calling addressesAddressBalanceTimeframeGet.');
         }
 
-        // verify required parameter 'start' is not null or undefined
-        if (start === null || start === undefined) {
-            throw new Error('Required parameter start was null or undefined when calling addressesAddressBalanceTimeframeGet.');
+        // verify required parameter 'timeframe' is not null or undefined
+        if (timeframe === null || timeframe === undefined) {
+            throw new Error('Required parameter timeframe was null or undefined when calling addressesAddressBalanceTimeframeGet.');
         }
 
-        // verify required parameter 'end' is not null or undefined
-        if (end === null || end === undefined) {
-            throw new Error('Required parameter end was null or undefined when calling addressesAddressBalanceTimeframeGet.');
+        if (token !== undefined) {
+            localVarQueryParameters['token'] = ObjectSerializer.serialize(token, "'BTC' | 'RUNE'");
         }
 
-        if (start !== undefined) {
-            localVarQueryParameters['start'] = ObjectSerializer.serialize(start, "number");
-        }
-
-        if (end !== undefined) {
-            localVarQueryParameters['end'] = ObjectSerializer.serialize(end, "number");
+        if (timeframe !== undefined) {
+            localVarQueryParameters['timeframe'] = ObjectSerializer.serialize(timeframe, "'4h' | '1d' | '1w' | '1m'");
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -2484,7 +2707,7 @@ export class MempoolApi {
      * @param txid Transaction ID
      * @param {*} [options] Override http request options.
      */
-    public mempoolTransactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }> {
+    public mempoolTransactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }> {
         const localVarPath = this.basePath + '/mempool/transactions/{txid}'
             .replace('{' + 'txid' + '}', encodeURIComponent(String(txid)));
         let localVarQueryParameters: any = {};
@@ -2520,12 +2743,12 @@ export class MempoolApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: InlineResponse2008;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "InlineResponse2008");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse2009");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2585,13 +2808,23 @@ export class RunesApi {
     /**
      * Get information about all runes
      * @summary Get runes info list
+     * @param page Page number (default: 1)
+     * @param perPage Items per page (default: 10)
      * @param {*} [options] Override http request options.
      */
-    public runesGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: Array<any>;  }> {
+    public runesGet (page?: number, perPage?: number, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }> {
         const localVarPath = this.basePath + '/runes';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
         let localVarFormParams: any = {};
+
+        if (page !== undefined) {
+            localVarQueryParameters['page'] = ObjectSerializer.serialize(page, "number");
+        }
+
+        if (perPage !== undefined) {
+            localVarQueryParameters['per_page'] = ObjectSerializer.serialize(perPage, "number");
+        }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
 
@@ -2617,12 +2850,12 @@ export class RunesApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: Array<any>;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "Array<any>");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse20010");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2746,56 +2979,6 @@ export class RunesApi {
             });
         });
     }
-    /**
-     * Get the current status of the runes system
-     * @summary Get runes status
-     * @param {*} [options] Override http request options.
-     */
-    public runesStatusGet (options: any = {}) : Promise<{ response: http.ClientResponse; body: any;  }> {
-        const localVarPath = this.basePath + '/runes/status';
-        let localVarQueryParameters: any = {};
-        let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
-        let localVarFormParams: any = {};
-
-        (<any>Object).assign(localVarHeaderParams, options.headers);
-
-        let localVarUseFormData = false;
-
-        let localVarRequestOptions: localVarRequest.Options = {
-            method: 'GET',
-            qs: localVarQueryParameters,
-            headers: localVarHeaderParams,
-            uri: localVarPath,
-            useQuerystring: this._useQuerystring,
-            json: true,
-        };
-
-        this.authentications.ApiKeyAuth.applyToRequest(localVarRequestOptions);
-
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.ClientResponse; body: any;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
-                } else {
-                    body = ObjectSerializer.deserialize(body, "any");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
-                }
-            });
-        });
-    }
 }
 export enum TransactionsApiApiKeys {
     ApiKeyAuth,
@@ -2904,7 +3087,7 @@ export class TransactionsApi {
      * @param transaction Raw transaction hex
      * @param {*} [options] Override http request options.
      */
-    public transactionsBroadcastPost (transaction: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }> {
+    public transactionsBroadcastPost (transaction: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse20011;  }> {
         const localVarPath = this.basePath + '/transactions/broadcast';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this.defaultHeaders);
@@ -2940,12 +3123,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: InlineResponse2009;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse20011;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "InlineResponse2009");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse20011");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
@@ -2961,7 +3144,7 @@ export class TransactionsApi {
      * @param txid Transaction ID
      * @param {*} [options] Override http request options.
      */
-    public transactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }> {
+    public transactionsTxidGet (txid: string, options: any = {}) : Promise<{ response: http.ClientResponse; body: InlineResponse20012;  }> {
         const localVarPath = this.basePath + '/transactions/{txid}'
             .replace('{' + 'txid' + '}', encodeURIComponent(String(txid)));
         let localVarQueryParameters: any = {};
@@ -2997,12 +3180,12 @@ export class TransactionsApi {
                 localVarRequestOptions.form = localVarFormParams;
             }
         }
-        return new Promise<{ response: http.ClientResponse; body: InlineResponse20010;  }>((resolve, reject) => {
+        return new Promise<{ response: http.ClientResponse; body: InlineResponse20012;  }>((resolve, reject) => {
             localVarRequest(localVarRequestOptions, (error, response, body) => {
                 if (error) {
                     reject(error);
                 } else {
-                    body = ObjectSerializer.deserialize(body, "InlineResponse20010");
+                    body = ObjectSerializer.deserialize(body, "InlineResponse20012");
                     if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
                         resolve({ response: response, body: body });
                     } else {
